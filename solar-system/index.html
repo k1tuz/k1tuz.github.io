@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/vertical-alignment-solar-system.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/horizontal-alignment-solar-system.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Solar System</title>
+  </head>
+  <body>
+    <button
+      class="toggleSolarSystemAlignmentButton"
+      data-alignment_mode="vertical"
+    >
+      <img src="assets/img/rocket.svg" alt="Rocket Icon" />
+    </button>
+
+    <h1 id="title">
+      <span>Solar</span>
+      <span>System</span>
+    </h1>
+
+    <main id="solar-system">
+      <section class="solar-system__vertical-alignment">
+        <div class="vertical-alignment__circle-axis" id="mercury-axis">
+          <img src="assets/img/mercury.svg" alt="Mercury Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="venus-axis">
+          <img src="assets/img/venus.svg" alt="Venus Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="earth-axis">
+          <img src="assets/img/earth.svg" alt="Earth Planet" />
+
+          <div id="moon-axis">
+            <img
+              src="assets/img/full-moon.svg"
+              alt="Full Moon"
+              id="full-moon"
+            />
+          </div>
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="mars-axis">
+          <img src="assets/img/mars.svg" alt="Mars Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="jupiter-axis">
+          <img src="assets/img/jupiter.svg" alt="Jupiter Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="saturn-axis">
+          <img src="assets/img/saturn.svg" alt="Saturn Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="uranus-axis">
+          <img src="assets/img/uranus.svg" alt="Uranus Planet" />
+        </div>
+
+        <div class="vertical-alignment__circle-axis" id="neptune-axis">
+          <img src="assets/img/neptune.svg" alt="Neptune Planet" />
+        </div>
+
+        <img src="assets/img/sun.svg" alt="Image of a Sun" class="sun" />
+      </section>
+
+      <section class="solar-system__horizontal-alignment hide">
+        <img src="assets/img/sun.svg" alt="Image of a Sun" class="sun" />
+
+        <div class="planet-container" id="mercury-box">
+          <img
+            src="assets/img/mercury.svg"
+            alt="Mercury Planet"
+            title="Mercury Planet"
+          />
+        </div>
+
+        <div class="planet-container" id="venus-box">
+          <img
+            src="assets/img/venus.svg"
+            alt="Venus Planet"
+            title="Venus Planet"
+          />
+        </div>
+
+        <div class="planet-container" id="earth-box">
+          <img
+            src="assets/img/earth.svg"
+            alt="Earth Planet"
+            title="Earth Planet"
+          />
+
+          <div id="moon-box">
+            <img
+              src="assets/img/full-moon.svg"
+              alt="Full Moon"
+              id="moon-box-full-moon"
+              title="Full Moon"
+            />
+          </div>
+        </div>
+
+        <div class="planet-container" id="mars-box">
+          <img
+            src="assets/img/mars.svg"
+            alt="Mars Planet"
+            title="Mars Planet"
+          />
+        </div>
+
+        <div class="planet-container" id="jupiter-box">
+          <img
+            src="assets/img/jupiter.svg"
+            alt="Jupiter Planet"
+            title="Jupiter Planet"
+          />
+        </div>
+
+        <div class="planet-container" id="saturn-box">
+          <img
+            src="assets/img/saturn.svg"
+            alt="Saturn Planet"
+            title="Saturn Planet"
+          />
+        </div>
+
+        <div class="planet-container" id="uranus-box">
+          <img
+            src="assets/img/uranus.svg"
+            alt="Uranus Planet"
+            title="Uranus Planet"
+          />
+        </div>
+
+        <div class="planet-container" id="neptune-box">
+          <img
+            src="assets/img/neptune.svg"
+            alt="Neptune Planet"
+            title="Neptune Planet"
+          />
+        </div>
+      </section>
+    </main>
+
+    <p id="owner">Owner: @devguiga</p>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

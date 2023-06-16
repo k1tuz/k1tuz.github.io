@@ -1,0 +1,454 @@
+@keyframes fullTranslation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.solar-system__vertical-alignment {
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.solar-system__vertical-alignment .sun {
+  width: 50px;
+}
+
+.vertical-alignment__circle-axis {
+  animation: fullTranslation var(--translation-time) linear infinite;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vertical-alignment__circle-axis img {
+  animation: rotation360 var(--rotation-time) linear infinite;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+}
+
+#mercury-axis {
+  --translation-time: 40s;
+  border-color: #747373;
+  height: 90px;
+  width: 90px;
+  z-index: 8;
+}
+
+#mercury-axis img {
+  --rotation-time: 35s;
+  width: 15px;
+}
+
+#venus-axis {
+  --translation-time: 50s;
+  border-color: #bd6b00;
+  height: 120px;
+  width: 120px;
+  z-index: 7;
+}
+
+#venus-axis img {
+  --rotation-time: 45s;
+  top: 15px;
+  width: 20px;
+}
+
+#earth-axis {
+  --translation-time: 25s;
+  border-color: #02722d;
+  height: 150px;
+  width: 150px;
+  z-index: 7;
+}
+
+#earth-axis img {
+  --rotation-time: 28s;
+  top: 20px;
+  width: 23px;
+}
+
+#moon-axis {
+  --translation-time: 8s;
+  animation: fullTranslation var(--translation-time) linear infinite;
+  border-radius: 50%;
+  height: 80px;
+  left: 10px;
+  position: absolute;
+  top: 32px;
+  width: 80px;
+}
+
+#moon-axis #full-moon {
+  top: 20px;
+  width: 20px;
+}
+
+#mars-axis {
+  --translation-time: 35s;
+  border-color: #8d4a2d;
+  height: 180px;
+  width: 180px;
+  z-index: 5;
+}
+
+#mars-axis img {
+  --rotation-time: 30s;
+  top: 36px;
+  width: 18px;
+}
+
+#jupiter-axis {
+  --translation-time: 12s;
+  border-color: #816c50;
+  height: 210px;
+  width: 210px;
+  z-index: 4;
+}
+
+#jupiter-axis img {
+  --rotation-time: 18s;
+  top: 35px;
+  width: 28px;
+}
+
+#saturn-axis {
+  --translation-time: 17s;
+  border-color: #9c8b75;
+  height: 240px;
+  width: 240px;
+  z-index: 3;
+}
+
+#saturn-axis img {
+  --rotation-time: 20s;
+  top: 50px;
+  width: 25px;
+}
+
+#uranus-axis {
+  --translation-time: 25s;
+  border-color: #add8e6;
+  height: 270px;
+  width: 270px;
+  z-index: 2;
+}
+
+#uranus-axis img {
+  --rotation-time: 26s;
+  top: 75px;
+  width: 18px;
+}
+
+#neptune-axis {
+  --translation-time: 22s;
+  border-color: #4b70dd;
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+}
+
+#neptune-axis img {
+  --rotation-time: 24s;
+  top: 82px;
+  width: 20px;
+}
+
+@media (min-width: 768px), (min-height: 768px) {
+  .solar-system__vertical-alignment .sun {
+    width: 120px;
+  }
+
+  .vertical-alignment__circle-axis img {
+    top: 48px;
+  }
+
+  #mercury-axis {
+    height: 200px;
+    width: 200px;
+  }
+
+  #mercury-axis img {
+    top: 40px;
+    width: 20px;
+  }
+
+  #venus-axis {
+    height: 250px;
+    width: 250px;
+  }
+
+  #venus-axis img {
+    top: 60px;
+    width: 25px;
+  }
+
+  #earth-axis {
+    height: 300px;
+    width: 300px;
+  }
+
+  #earth-axis img {
+    top: 70px;
+    width: 28px;
+  }
+
+  #moon-axis {
+    height: 85px;
+    left: 15px;
+    top: 85px;
+    width: 85px;
+  }
+
+  #mars-axis {
+    height: 350px;
+    width: 350px;
+  }
+
+  #mars-axis img {
+    top: 95px;
+    width: 23px;
+  }
+
+  #jupiter-axis {
+    height: 400px;
+    width: 400px;
+  }
+
+  #jupiter-axis img {
+    top: 100px;
+    width: 32px;
+  }
+
+  #saturn-axis {
+    height: 450px;
+    width: 450px;
+  }
+
+  #saturn-axis img {
+    top: 110px;
+    width: 40px;
+  }
+
+  #uranus-axis {
+    height: 500px;
+    width: 500px;
+  }
+
+  #uranus-axis img {
+    top: 155px;
+    width: 25px;
+  }
+
+  #neptune-axis {
+    height: 550px;
+    width: 550px;
+  }
+
+  #neptune-axis img {
+    top: 170px;
+    width: 28px;
+  }
+}
+
+@media (min-width: 1300px) and (min-height: 633px) {
+  .solar-system__vertical-alignment .sun {
+    width: 120px;
+  }
+
+  .vertical-alignment__circle-axis img {
+    top: 25px;
+  }
+
+  #mercury-axis {
+    height: 180px;
+    width: 180px;
+  }
+
+  #mercury-axis img {
+    top: 30px;
+    width: 25px;
+  }
+
+  #venus-axis {
+    height: 225px;
+    width: 225px;
+  }
+
+  #venus-axis img {
+    top: 40px;
+    width: 28px;
+  }
+
+  #earth-axis {
+    height: 270px;
+    width: 270px;
+  }
+
+  #earth-axis img {
+    top: 52px;
+    width: 29px;
+  }
+
+  #moon-axis {
+    height: 90px;
+    left: 15px;
+    top: 62px;
+    width: 90px;
+  }
+
+  #mars-axis {
+    height: 320px;
+    width: 320px;
+  }
+
+  #mars-axis img {
+    top: 65px;
+    width: 35px;
+  }
+
+  #jupiter-axis {
+    height: 380px;
+    width: 380px;
+  }
+
+  #jupiter-axis img {
+    top: 75px;
+    width: 45px;
+  }
+
+  #saturn-axis {
+    height: 460px;
+    width: 460px;
+  }
+
+  #saturn-axis img {
+    top: 95px;
+    width: 50px;
+  }
+
+  #uranus-axis {
+    height: 520px;
+    width: 520px;
+  }
+
+  #uranus-axis img {
+    top: 150px;
+    width: 30px;
+  }
+
+  #neptune-axis {
+    height: 600px;
+    width: 600px;
+  }
+
+  #neptune-axis img {
+    top: 197px;
+    width: 28px;
+  }
+}
+
+@media (min-width: 1450px), (min-height: 1025px) {
+  .solar-system__vertical-alignment .sun {
+    width: 140px;
+  }
+
+  #mercury-axis {
+    height: 220px;
+    width: 220px;
+  }
+
+  #mercury-axis img {
+    top: 30px;
+    width: 35px;
+  }
+
+  #venus-axis {
+    height: 300px;
+    width: 300px;
+  }
+
+  #venus-axis img {
+    top: 30px;
+    width: 55px;
+  }
+
+  #earth-axis {
+    height: 400px;
+    width: 400px;
+  }
+
+  #earth-axis img {
+    top: 60px;
+    width: 60px;
+  }
+
+  #moon-axis {
+    height: 150px;
+    left: 30px;
+    top: 90px;
+    width: 150px;
+  }
+
+  #moon-axis #full-moon {
+    width: 35px;
+  }
+
+  #mars-axis {
+    height: 500px;
+    width: 500px;
+  }
+
+  #mars-axis img {
+    top: 115px;
+    width: 50px;
+  }
+
+  #jupiter-axis {
+    height: 600px;
+    width: 600px;
+  }
+
+  #jupiter-axis img {
+    top: 110px;
+    width: 75px;
+  }
+
+  #saturn-axis {
+    height: 700px;
+    width: 700px;
+  }
+
+  #saturn-axis img {
+    top: 130px;
+    width: 90px;
+  }
+
+  #uranus-axis {
+    height: 800px;
+    width: 800px;
+  }
+
+  #uranus-axis img {
+    top: 215px;
+    width: 60px;
+  }
+
+  #neptune-axis {
+    height: 900px;
+    width: 900px;
+  }
+
+  #neptune-axis img {
+    top: 230px;
+    width: 70px;
+  }
+}
